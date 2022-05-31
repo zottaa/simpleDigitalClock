@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/smallSize">
+
+        <TextClock
+            android:id="@+id/dayOfWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@fonts/my_font.otf"
+            android:format12Hour="EEEE"
+            android:format24Hour="EEEE"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/clockTextSize" />
+
+        <TextClock
+            android:id="@+id/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@fonts/my_font.otf"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/clockTextSize" />
+
+        <TextClock
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@fonts/my_font.otf"
+            android:format12Hour="dd, MMMM"
+            android:format24Hour="dd, MMMM"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dataTextSize" />
+
+    </LinearLayout>
+</LinearLayout>

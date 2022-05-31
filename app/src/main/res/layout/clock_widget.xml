@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Clock.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:theme="@style/Theme.Clock.AppWidgetContainer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/smallSize"       >
+        <TextClock
+            android:id="@+id/widgetDayOfWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/widgetClockTextSize"
+            android:textColor="@color/white"
+            android:fontFamily="@fonts/my_font.otf"
+            android:format24Hour="EEEE"
+            android:format12Hour="EEEE"
+            />
+        <TextClock
+            android:id="@+id/widgetClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/widgetClockTextSize"
+            android:fontFamily="@fonts/my_font.otf"
+            android:textColor="@color/white"
+            />
+        <TextClock
+            android:id="@+id/widgetData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/widgetDataTextSize"
+            android:fontFamily="@fonts/my_font.otf"
+            android:textColor="@color/white"
+            android:format24Hour="dd, MMMM"
+            android:format12Hour="dd, MMMM"
+            />
+    </LinearLayout>
+</LinearLayout>
